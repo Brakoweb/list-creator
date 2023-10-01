@@ -8,6 +8,7 @@ A simple "List Creator" project that allows you to add items to a list, delete i
 - Delete individual items from the list.
 - Clear the entire list.
 - Simple and user-friendly interface.
+- Drag and Drop an item to duplicate it.
 
 ## Technologies Used
 
@@ -17,7 +18,7 @@ A simple "List Creator" project that allows you to add items to a list, delete i
 
 ## Screenshot
 
-![Screenshot](https://brakoweb.com:2083/cpsess5100730594/viewer/home2%2fbrakoweb%2fpublic_html%2fimages%2ffulls/list-creator.png)
+![Screenshot](https://github.com/Brakoweb/list-creator/blob/main/list-creator.png)
 
 ## How to Use
 
