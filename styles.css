@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
 }
 .container {
   max-width: 400px;
@@ -12,11 +14,28 @@ body {
   margin-right: 8px;
 }
 #add-btn,
-#delete-btn,
+.delete-item-btn,
 #delete-all-btn {
   padding: 8px 16px;
   margin: 8px;
   cursor: pointer;
+  border: 1px solid #000;
+  color: #fff;
+  font-weight: bold;
+}
+#add-btn {
+  background-color: green;
+}
+#add-btn:hover {
+  background-color: rgb(70, 156, 70);
+}
+#delete-all-btn,
+.delete-item-btn {
+  background-color: red;
+}
+#delete-all-btn:hover,
+.delete-item-btn:hover {
+  background-color: rgb(239, 63, 63);
 }
 ul {
   list-style-type: none;
@@ -29,4 +48,5 @@ li {
   padding: 8px;
   border: 1px solid #ddd;
   margin-bottom: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
