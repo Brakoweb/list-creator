@@ -17,7 +17,7 @@ A simple "List Creator" project that allows you to add items to a list, delete i
 
 ## Screenshot
 
-![Screenshot]([screenshot.png](https://brakoweb.com:2083/cpsess5100730594/viewer/home2%2fbrakoweb%2fpublic_html%2fimages%2ffulls/list-creator.png))
+![Screenshot](https://brakoweb.com:2083/cpsess5100730594/viewer/home2%2fbrakoweb%2fpublic_html%2fimages%2ffulls/list-creator.png)
 
 ## How to Use
 
