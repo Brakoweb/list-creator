@@ -12,7 +12,11 @@
       <input type="text" id="item" placeholder="Enter item" />
       <button id="add-btn">Add Item</button>
       <button id="delete-all-btn">Delete All</button>
-      <ul id="item-list"></ul>
+      <ul
+        id="item-list"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></ul>
     </div>
 
     <script src="scripts.js"></script>

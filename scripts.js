@@ -5,7 +5,6 @@ const itemList = document.getElementById("item-list");
 const itemInput = document.getElementById("item");
 
 addItemButton.addEventListener("click", addItem);
-deleteItemButton.addEventListener("click", deleteItem);
 deleteAllButton.addEventListener("click", deleteAllItems);
 
 function addItem() {
@@ -14,7 +13,7 @@ function addItem() {
 
   const listItem = document.createElement("li");
   listItem.innerHTML = `
-                ${itemText}
+                <span draggable="true" ondragstart="drag(event)">${itemText}</span>
                 <button class="delete-item-btn">Delete</button>
             `;
   itemList.appendChild(listItem);
@@ -33,6 +32,28 @@ function deleteItem() {
   });
 }
 
+//functions for drag and drop
+
 function deleteAllItems() {
   itemList.innerHTML = "";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.innerText);
+}
+
+function drop(event) {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("text");
+  const listItem = document.createElement("li");
+  listItem.innerHTML = `
+        <span>${data}</span>
+        <button class="delete-item-btn">Delete</button>
+    `;
+  itemList.appendChild(listItem);
+  deleteItem();
 }
